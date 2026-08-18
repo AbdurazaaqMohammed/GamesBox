@@ -69,7 +69,7 @@ public class KnifeHitActivity extends BaseGameActivity {
         playersStepper = new UI.Stepper(this, "Players", 2, 8, 4, 1);
         content.addView(playersStepper.row);
 
-        bladesStepper = new UI.Stepper(this, "Knives per player", 4, 12, 6, 1);
+        bladesStepper = new UI.Stepper(this, "Knives per player", 4, 12, 12, 1);
         content.addView(bladesStepper.row);
 
         content.addView(UI.space(this, 16));
