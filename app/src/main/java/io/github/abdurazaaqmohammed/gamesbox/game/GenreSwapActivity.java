@@ -29,6 +29,11 @@ public class GenreSwapActivity extends BaseGameActivity {
     private TextView timerText;
     private boolean running;
 
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
+
     private String playerName(int i) {
         return PlayerNames.get(this, i);
     }

@@ -51,6 +51,11 @@ public class HeadsUpActivity extends BaseGameActivity implements SensorEventList
     private int skipped;
     private int remaining;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
     private TextView timerText;
     private TextView wordText;
     private TextView scoreBadge;

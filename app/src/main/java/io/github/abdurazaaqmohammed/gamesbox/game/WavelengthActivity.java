@@ -231,7 +231,7 @@ public class WavelengthActivity extends BaseGameActivity {
         for (int r = 0; r < order.length; r++) {
             int p = order[r];
             sb.append(r + 1).append(". ").append(playerName(p)).append(" - ")
-                    .append(scores[p]).append(" hit" + (scores[p] == 1 ? "" : "s"));
+                    .append(scores[p]).append(" hit").append(scores[p] == 1 ? "" : "s");
             if (r == 0) sb.append("  📡");
             if (r < order.length - 1) sb.append("\n");
         }

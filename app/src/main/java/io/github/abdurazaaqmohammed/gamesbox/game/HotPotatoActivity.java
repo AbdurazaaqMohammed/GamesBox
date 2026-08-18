@@ -27,6 +27,11 @@ public class HotPotatoActivity extends BaseGameActivity {
     private final Handler handler = new Handler(Looper.getMainLooper());
     private UI.Stepper playersStepper;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
     private String currentTopic;
     private TextView potato;
     private long startAt;

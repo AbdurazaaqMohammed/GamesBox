@@ -45,5 +45,5 @@ An offline party game box for Android. Pass one phone around your group and play
 ## Features
 
 - Runs on all versions of Android (minSdk 1)
-- Tiny - the release APK is ~100 KB
+- Tiny - the release APK is ~200 KB
 - No permissions except vibration (for a few games like Hot Potato).

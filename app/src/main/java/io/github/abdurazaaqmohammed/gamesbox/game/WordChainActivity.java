@@ -33,6 +33,11 @@ public class WordChainActivity extends BaseGameActivity {
     private UI.Stepper playersStepper;
     private int players;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
     private char letter;
     private long startAt;
     private long totalMillis;

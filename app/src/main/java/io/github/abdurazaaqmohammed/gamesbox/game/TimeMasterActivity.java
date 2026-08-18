@@ -33,6 +33,11 @@ public class TimeMasterActivity extends BaseGameActivity {
     private int[] bestDeviation;
     private int currentPlayer;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
     private long startAt;
     private int targetSeconds;
     private long stoppedAt;

@@ -34,6 +34,11 @@ public class ScavengerHuntActivity extends BaseGameActivity {
     private int roundSeconds;
     private int remaining;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
     private String[] items;
     private boolean[] found;
     private int itemsFound;

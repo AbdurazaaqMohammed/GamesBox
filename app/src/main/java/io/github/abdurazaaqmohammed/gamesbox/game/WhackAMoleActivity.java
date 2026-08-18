@@ -39,6 +39,12 @@ public class WhackAMoleActivity extends BaseGameActivity {
     private MoleGridView moles;
     private int remaining;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
+
     private TextView timeText;
     private TextView[] scoreChips;
 
@@ -325,7 +331,7 @@ public class WhackAMoleActivity extends BaseGameActivity {
         private final int[] moleColor = new int[36];
         private int rows = 4;
         private int cols = 4;
-        private boolean running;
+private boolean running;
         private OnWhack onWhack;
 
         MoleGridView(Context c) {

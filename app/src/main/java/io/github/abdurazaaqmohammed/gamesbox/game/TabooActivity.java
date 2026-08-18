@@ -29,6 +29,11 @@ public class TabooActivity extends BaseGameActivity {
     private int[] points;
     private int describer;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
     private int remaining;
     private TextView timerText;
     private final List<Integer> order = new ArrayList<>();

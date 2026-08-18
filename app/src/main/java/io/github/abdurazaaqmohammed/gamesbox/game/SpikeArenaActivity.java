@@ -36,6 +36,12 @@ public class SpikeArenaActivity extends BaseGameActivity {
     private SpikeArenaView arena;
     private int remaining;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
+
     private TextView timeText;
     private TextView scoreText;
 
@@ -280,7 +286,7 @@ public class SpikeArenaActivity extends BaseGameActivity {
         private final float[] rightYs = new float[MAX_SPIKES_PER_WALL];
         private int leftCount;
         private int rightCount;
-        private boolean running;
+private boolean running;
         private boolean wallsInit;
         private boolean counting;
         private int count;

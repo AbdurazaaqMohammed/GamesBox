@@ -33,6 +33,11 @@ public class CharadesActivity extends BaseGameActivity {
     private final List<Integer> order = new ArrayList<>();
     private int cursor;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
     private int remaining;
     private TextView timerText;
 

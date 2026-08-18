@@ -182,13 +182,11 @@ public final class UI {
     }
 
     public static int getTheme(Context c) {
-        return c.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-                .getInt(KEY_THEME, THEME_LIGHT);
+        return c.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getInt(KEY_THEME, THEME_BLACK);
     }
 
     public static void setTheme(Context c, int theme) {
-        SharedPreferences.Editor e = c.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-                .edit().putInt(KEY_THEME, theme);
+        SharedPreferences.Editor e = c.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().putInt(KEY_THEME, theme);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
             e.apply();
         } else e.commit();

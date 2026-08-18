@@ -12,10 +12,14 @@ import android.widget.TextView;
 
 import io.github.abdurazaaqmohammed.gamesbox.game.BullsAndCowsActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.BowlingActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.BreakoutActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.BlockBlastActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.CharadesActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.AccentRouletteActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.EmojiMovieActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.FifteenPuzzleActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.FiveSecondActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.FlappyActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.GenreSwapActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.HeadsUpActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.HigherOrLowerActivity;
@@ -30,14 +34,19 @@ import io.github.abdurazaaqmohammed.gamesbox.game.PictionaryActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.ReactionActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.RhymeTimeActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.ScavengerHuntActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.SimonActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.SimonSaysActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.SnakeActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.SpikeArenaActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.StopBusActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.StoryChainActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.SuperRecallActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.TabooActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.TetrisActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.TicTacToeActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.TimeMasterActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.TruthOrDareActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.TwentyFortyEightActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.TwentyQuestionsActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.TwoTruthsActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.WavelengthActivity;
@@ -74,6 +83,17 @@ public class GamesBoxActivity extends Activity {
     }
 
     private static final SectionInfo[] SECTIONS = {
+            new SectionInfo("Single Player", new GameInfo[]{
+                    new GameInfo("Snake", "Eat, grow, don't crash", UI.MINT, SnakeActivity.class),
+                    new GameInfo("Block Blast", "Blast full rows and columns", UI.MINT, BlockBlastActivity.class),
+                    new GameInfo("2048", "Slide and merge the tiles", UI.GOLD, TwentyFortyEightActivity.class),
+                    new GameInfo("Tetris", "Stack the falling blocks", UI.INDIGO, TetrisActivity.class),
+                    new GameInfo("Flappy Bird", "Tap to flap, dodge pipes", UI.SKY, FlappyActivity.class),
+                    new GameInfo("Breakout", "Smash every brick", UI.CYAN, BreakoutActivity.class),
+                    new GameInfo("Tic Tac Toe", "Beat the computer", UI.BLUE, TicTacToeActivity.class),
+                    new GameInfo("Simon", "Follow the light pattern", UI.PURPLE, SimonActivity.class),
+                    new GameInfo("15 Puzzle", "Slide the tiles into order", UI.TEAL, FifteenPuzzleActivity.class),
+            }),
             new SectionInfo("Party Setup", new GameInfo[]{
                     new GameInfo("Player Names", "Set names for every game", UI.SKY, PlayerNamesActivity.class),
             }),
@@ -143,8 +163,7 @@ public class GamesBoxActivity extends Activity {
         title.setGravity(Gravity.CENTER);
         root.addView(title);
 
-        TextView sub = UI.text(this, "App theme",
-                UI.INK_SOFT, 13, false);
+        TextView sub = UI.text(this, "App theme", UI.INK_SOFT, 13, false);
         sub.setGravity(Gravity.CENTER);
         sub.setPadding(0, UI.dp(this, 14), 0, UI.dp(this, 4));
         root.addView(sub);

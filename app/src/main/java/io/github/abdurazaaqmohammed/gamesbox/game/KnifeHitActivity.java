@@ -35,6 +35,12 @@ public class KnifeHitActivity extends BaseGameActivity {
 
     private KnifeHitView arena;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
+
     private TextView status;
 
     @Override
@@ -238,7 +244,7 @@ public class KnifeHitActivity extends BaseGameActivity {
         private final Handler h = new Handler(Looper.getMainLooper());
         private final float[] stuck = new float[24];
         private OnEnd onEnd;
-        private boolean running;
+private boolean running;
         private boolean flying;
         private int blades;
         private int embeddedCount;

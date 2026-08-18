@@ -25,6 +25,11 @@ public class FiveSecondActivity extends BaseGameActivity {
     private int cursor;
     private String category;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
     private int remaining;
     private TextView timerText;
 

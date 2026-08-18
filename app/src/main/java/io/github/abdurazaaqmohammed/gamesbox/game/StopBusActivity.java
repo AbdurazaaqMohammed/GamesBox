@@ -28,6 +28,11 @@ public class StopBusActivity extends BaseGameActivity {
     private final List<Integer> cats = new ArrayList<>();
     private int[] points;
     private boolean running;
+
+    @Override
+    protected boolean isGameInProgress() {
+        return running;
+    }
     private int remaining;
     private TextView timerText;
     private List<TextView> catViews = new ArrayList<>();

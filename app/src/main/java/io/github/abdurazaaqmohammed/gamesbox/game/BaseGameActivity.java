@@ -11,6 +11,10 @@ public abstract class BaseGameActivity extends Activity {
 
     @Override
     public void onBackPressed() {
+        if (!isGameInProgress()) {
+            super.onBackPressed();
+            return;
+        }
         long now = System.currentTimeMillis();
         if (now - lastBackPress <= EXIT_WINDOW_MS) {
             super.onBackPressed();
@@ -18,5 +22,13 @@ public abstract class BaseGameActivity extends Activity {
         }
         lastBackPress = now;
         Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * True while a round or run is actually playing (not on the setup /
+     * config screen). When false, a single back press leaves the game.
+     */
+    protected boolean isGameInProgress() {
+        return true;
     }
 }
