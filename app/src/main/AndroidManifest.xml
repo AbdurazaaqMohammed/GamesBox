@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:icon="@android:drawable/star_big_on"
+        android:label="GamesBox"
+        android:theme="@style/AppTheme"
+        android:enableOnBackInvokedCallback="false"
+        android:allowBackup="true">
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.GamesBoxActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.ImposterActivity"/>
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.WouldYouRatherActivity"
+         />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.NeverHaveIActivity"/>
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.TruthOrDareActivity"/>
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.CharadesActivity"/>
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.MostLikelyActivity"/>
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.EmojiMovieActivity"/>
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.StopBusActivity"/>
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.HotPotatoActivity"/>
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.HeadsUpActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.MadLibsActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.TwentyQuestionsActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.TabooActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.FiveSecondActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.TwoTruthsActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.StoryChainActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.WordChainActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.PictionaryActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.SimonSaysActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.ScavengerHuntActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.RhymeTimeActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.HigherOrLowerActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.BullsAndCowsActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.MemoryMatchActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.TimeMasterActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.ReactionActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.SuperRecallActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.GenreSwapActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.AccentRouletteActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.WavelengthActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.WerewolfActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.SpikeArenaActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.DartsActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.BowlingActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.WhackAMoleActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.KnifeHitActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.PlayerNamesActivity" />
+    </application>
+</manifest>
