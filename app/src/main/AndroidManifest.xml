@@ -83,8 +83,6 @@
         <activity
             android:name="io.github.abdurazaaqmohammed.gamesbox.game.SpikeArenaActivity" />
         <activity
-            android:name="io.github.abdurazaaqmohammed.gamesbox.game.DartsActivity" />
-        <activity
             android:name="io.github.abdurazaaqmohammed.gamesbox.game.BowlingActivity" />
         <activity
             android:name="io.github.abdurazaaqmohammed.gamesbox.game.WhackAMoleActivity" />
@@ -92,5 +90,23 @@
             android:name="io.github.abdurazaaqmohammed.gamesbox.game.KnifeHitActivity" />
         <activity
             android:name="io.github.abdurazaaqmohammed.gamesbox.PlayerNamesActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.SnakeActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.BlockBlastActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.TwentyFortyEightActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.TetrisActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.FlappyActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.BreakoutActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.TicTacToeActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.SimonActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.FifteenPuzzleActivity" />
     </application>
 </manifest>
