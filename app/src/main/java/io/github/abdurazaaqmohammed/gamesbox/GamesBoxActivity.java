@@ -55,6 +55,7 @@ import io.github.abdurazaaqmohammed.gamesbox.game.WhackAMoleActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.WordChainActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.WouldYouRatherActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.PongActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.FruitNinjaActivity;
 import io.github.abdurazaaqmohammed.gamesbox.ui.UI;
 
 public class GamesBoxActivity extends Activity {
@@ -94,6 +95,7 @@ public class GamesBoxActivity extends Activity {
                     new GameInfo("Tic Tac Toe", "Beat the computer", UI.BLUE, TicTacToeActivity.class),
                     new GameInfo("Simon", "Follow the light pattern", UI.PURPLE, SimonActivity.class),
                     new GameInfo("15 Puzzle", "Slide the tiles into order", UI.TEAL, FifteenPuzzleActivity.class),
+                    new GameInfo("Fruit Ninja", "Swipe to slice the fruit", UI.RED, FruitNinjaActivity.class),
             }),
             new SectionInfo("Party Setup", new GameInfo[]{
                     new GameInfo("Player Names", "Set names for every game", UI.SKY, PlayerNamesActivity.class),

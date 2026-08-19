@@ -110,5 +110,7 @@
             android:name="io.github.abdurazaaqmohammed.gamesbox.game.FifteenPuzzleActivity" />
         <activity
             android:name="io.github.abdurazaaqmohammed.gamesbox.game.PongActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.FruitNinjaActivity" />
     </application>
 </manifest>
