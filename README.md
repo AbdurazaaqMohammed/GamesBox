@@ -1,6 +1,10 @@
 # GamesBox
 
-An offline game box for Android. (9 single player games and 36 group games). No internet required and runs on every Android version.
+An offline game box for Android. (9 single player games and 36 group games). It supports all versions of Android.
+<img width="240" height="533" alt="Screenshot of home page" src="https://github.com/user-attachments/assets/5dfe2627-1c2e-4ea0-af6b-3c490f723b65" />
+<img width="240" height="533" alt="Screenshot of configuring Imposter game" src="https://github.com/user-attachments/assets/19d43bfe-620f-42b0-aabb-b9a59ffb9181" />
+<img width="240" height="533" alt="Screenshot of round in Imposter" src="https://github.com/user-attachments/assets/e6c61bf9-4082-45b3-bafb-e7ec6115b2e7" />
+
 
 ## Games
 
