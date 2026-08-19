@@ -54,6 +54,7 @@ import io.github.abdurazaaqmohammed.gamesbox.game.WerewolfActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.WhackAMoleActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.WordChainActivity;
 import io.github.abdurazaaqmohammed.gamesbox.game.WouldYouRatherActivity;
+import io.github.abdurazaaqmohammed.gamesbox.game.PongActivity;
 import io.github.abdurazaaqmohammed.gamesbox.ui.UI;
 
 public class GamesBoxActivity extends Activity {
@@ -140,6 +141,7 @@ public class GamesBoxActivity extends Activity {
                     new GameInfo("Bowling", "Swipe to aim, roll true", UI.CYAN, BowlingActivity.class),
                     new GameInfo("Super Recall", "Copy the symbol pattern", UI.GOLD, SuperRecallActivity.class),
                     new GameInfo("Memory Match", "Flip and match", UI.AMBER, MemoryMatchActivity.class),
+                    new GameInfo("Pong", "2 player paddle showdown", UI.SLATE, PongActivity.class),
             }),
             new SectionInfo("Get Moving", new GameInfo[]{
                     new GameInfo("Scavenger Hunt", "Race to find the items", UI.MINT, ScavengerHuntActivity.class),

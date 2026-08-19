@@ -108,5 +108,7 @@
             android:name="io.github.abdurazaaqmohammed.gamesbox.game.SimonActivity" />
         <activity
             android:name="io.github.abdurazaaqmohammed.gamesbox.game.FifteenPuzzleActivity" />
+        <activity
+            android:name="io.github.abdurazaaqmohammed.gamesbox.game.PongActivity" />
     </application>
 </manifest>
